@@ -1,0 +1,48 @@
+//侧边框的公共样式
+.client{
+  width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  margin-top:20px;
+  font-size:14px;
+  line-height:30px;
+}
+.community{
+  @extend .client;
+  p{
+    background: #ddd;
+    padding-left:15px;
+  }
+  ul{
+    width: 280px;
+    padding:15px;
+  }
+}
+.topic,.scoreboard,.author{
+  @extend .community
+}
+.submit{
+  width: 270px;
+  padding:15px;
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.picture{
+  @extend .submit
+}
+article{
+  width: 90%;
+  margin:0 auto;
+  margin-top:20px;
+  overflow: hidden;
+  section{
+    width: 780px;
+    float: left;
+  }
+  aside{
+    width: 310px;
+    float: right;
+  }
+}
